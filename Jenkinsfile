@@ -20,12 +20,5 @@ pipeline {
         }
       }
     }
-    stage("DEPLOY DOCKER") {
-      steps {
-        script {
-          dockerImageBuild.push()
-        }
-      }
-    }
   }
 }
