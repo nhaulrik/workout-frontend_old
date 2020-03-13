@@ -22,9 +22,7 @@ pipeline {
     }
     stage("DEPLOY DOCKER") {
       steps {
-        script {
-          dockerImageBuild.push()
-        }
+        sh "docker-compose up"
       }
     }
   }
