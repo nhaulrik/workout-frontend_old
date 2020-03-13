@@ -20,10 +20,10 @@ pipeline {
         }
       }
     }
-    stage("DEPLOY DOCKER") {
-      steps {
-        sh "docker-compose up"
-      }
-    }
+//    stage("DEPLOY DOCKER") {
+//      steps {
+//        sh "docker-compose up"
+//      }
+//    }
   }
 }
